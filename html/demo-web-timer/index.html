@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rubik's cube!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="container" tabindex="0"></div>
+      <div id="right">
+        <div id="timer">
+          <div id="time"><p id="time_p">0.00</p></div>
+        </div>
+        <div id="stats-block">
+          <h2>Stats:</h2>
+          <div id="stats"></div>
+        </div>
+        <div id="times-block">
+          <h2>Times:</h2>
+          <div id="times"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ui modal" id="settings">
+      <i class="close icon"></i>
+      <div class="header">
+        Preferences
+      </div>
+      <div class="scrolling content">
+        <div class="ui labeled input">
+          <div class="ui label">
+            Sticker shininess
+          </div>
+          <input type="text" placeholder="1">
+        </div>
+      </div>
+      <div class="actions">
+        <div class="ui positive right labeled icon button">
+          Save
+          <i class="checkmark icon"></i>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+    <script src="./demo-web-timer.bundle.js"></script>
+  </body>
+</html>

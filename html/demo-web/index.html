@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rubik's cube!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div id="container" tabindex="0"></div>
+	<div class="panel">
+		<div class="main">
+			<div class="setting">
+				<div class="settingLeft"><label class="w3-text-white">Animation Speed:</label></div>		
+				<div class="settingRight">
+					<select id="animationTPS" class="selectInput" name="animationTPS">
+					  <option value="0.2">Unbelievably slow</option>
+					  <option value="1.5">Slow</option>
+					  <option value="5">Normal</option>
+					  <option value="10">Fast</option>
+					  <option value="20">Lightning fast</option>
+					  <option value="Infinity">Instant (no animation)</option>
+					</select>
+				</div>
+			</div>
+			<div class="setting">
+				<div class="settingLeft"><label class="w3-text-white">Color scheme:</label></div>		
+				<div class="settingRight">
+					<select id="colorScheme" class="selectInput" name="colorScheme">
+					  <option value="standard">Standard</option>
+					  <option value="pink">Pink and black</options>
+					  <option value="dark">Dark</option>
+					</select>
+				</div>
+			</div>
+			<div class="setting">
+				<div class="settingLeft"><label class="w3-text-white">Logo:</label></div>		
+				<div class="settingRight">
+					<select id="logo" class="selectInput" name="logo">
+					  <option value="no">No logo</option>
+					  <option value="top">Top</option>
+					  <option value="left">Left</options>
+					  <option value="front">Front</option>
+					  <option value="right">Right</option>
+					  <option value="back">Back</options>
+					  <option value="bottom">Bottom</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="settingsBtn">
+		<p>&#9776;</p>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./demo-web.bundle.js"></script>
+  </body>
+</html>
